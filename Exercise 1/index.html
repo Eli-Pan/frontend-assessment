@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindarc Assessment - Exercise 1 - Yilei Pan</title>
+  <script src="https://unpkg.com/vue@next"></script>
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <div class="container">
+        <h1>{{ banner.title }}</h1>
+        <p>{{ banner.text }}</p>
+      </div>
+    </header>
+    <div class="row">
+      <div v-for="content in contents" class="row-item">
+        <div class="card">
+          <img :src="content.img" alt="">
+          <p>{{ content.text }}</p>
+          <button>READ MORE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
