@@ -14,3 +14,10 @@ Exercise 1
 - Right click on the text area and choose 'Open with Live Server.'  
 Alternatively, press Alt+L and Alt+O in a row.
 
+
+Bonus Point - Banana
+---
+###### Instruction
+- Please open up ./bananaExplained.md and read in preview window  .
+Alternatively, view on GitHub.
+
