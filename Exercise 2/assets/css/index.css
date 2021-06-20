@@ -1,0 +1,102 @@
+body {
+  font-family: Arial;
+}
+
+#tab_container {
+  display: block;
+}
+
+.tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #fff;
+  border-bottom-style: none;
+  font-weight: bold;
+}
+
+.tabcontent {
+  display: none;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#accordion_container {
+  display: none;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-weight: normal;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.accordion.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion.active {
+  font-weight: bold;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border: 1px solid #ccc;
+  margin: 0 0 5px;
+}
+
+@media screen and (max-width:768px) {
+  #tab_container {
+    display: none;
+  }
+
+  #accordion_container {
+    display: block;
+  }
+}

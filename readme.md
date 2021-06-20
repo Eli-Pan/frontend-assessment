@@ -14,6 +14,17 @@ Exercise 1
 - Right click on the text area and choose 'Open with Live Server.'  
 Alternatively, press Alt+L and Alt+O in a row.
 
+Exercise 2
+---
+
+##### Requirement
+- Visual Studio Code
+- Live Server (VS Code Plugin `ritwickdey.liveserver`)
+
+##### Instruction
+- Please open up ./Exercise 2/index.html
+- Right click on the text area and choose 'Open with Live Server'.  
+Alternatively, press Alt+L and Alt+O in a row.
 
 Bonus Point - Banana
 ---

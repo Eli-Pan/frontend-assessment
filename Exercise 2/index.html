@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindarc Assessment - Exercise 2 - Yilei Pan</title>
+  <script src="https://unpkg.com/vue@next"></script>
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+  <div id="app">
+    <div id="tab_container">
+      <div class="tab" id="navtabs">
+        <button v-for="(content, index) in contents"
+          :class="{ 'tablinks active': index === 0, 'tablinks': index !== 0 }" @click="openTab(index)">
+          {{ content.title }}
+        </button>
+      </div>
+      <div v-for="(content, index) in contents" :id="content.title" class="tabcontent" :style="getTabcontentStyle(index)">
+        <h3>{{ content.title }}</h3>
+        <p v-html="content.content"></p>
+      </div>
+    </div>
+    <div id="accordion_container">
+      <div v-for="(content, index) in contents" class="panel-group">
+        <button :class="{ 'accordion active': index === 0, 'accordion': index !== 0 }" @click="openPanel(index)">
+          {{ content.title }}
+        </button>
+        <div class="panel">
+          <p v-html="content.content"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
